@@ -10,6 +10,7 @@ const EmployeeList = ({ employees, handleEdit, deleteEmployeeinfo  }) => {
     return (
         <>
             {employees.map((employee) => (
+                
                 <tr >
                     <td>{employee.namesurname}</td>
                     <td>{employee.idnumber}</td>
@@ -21,6 +22,7 @@ const EmployeeList = ({ employees, handleEdit, deleteEmployeeinfo  }) => {
                     <td><button className='delete-btn' onClick={() => deleteEmployeeinfo(employee.index)}>delete< Icon icon={trash} /></button></td>
                 </tr>
             ))};
+           
         </>
     )
 }
