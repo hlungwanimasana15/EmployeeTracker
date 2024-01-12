@@ -101,3 +101,41 @@
 tbody{
   margin-top: 25px;
 }
+
+
+.wrapper {
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container,
+.view-container {
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+ 
+  .main {
+    flex-direction: row;
+  }
+
+  .form-container,
+  .view-container {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
